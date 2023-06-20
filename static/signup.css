@@ -1,0 +1,38 @@
+body {
+    background: url("./Pics/bg.jpg") no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: large;
+}
+.signup {
+    text-align: center;
+    width: 50%;
+    padding: 10vh 0;
+    position: relative;
+    margin: auto;
+    color: white;
+}
+button {
+    background-color: transparent;
+    border: 3px #00e3fe solid;
+    padding: 20px;
+    color: white;
+}
+button:hover {
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00e3fe,
+                0 0 25px #00e3fe,
+                0 0 50px #00e3fe,
+                0 0 200px #00e3fe;
+    -webkit-box-reflect:below 1px linear-gradient(transparent, #00e3fe);
+}
+.signup input {
+    outline:solid #00e3fe;
+    color: white;
+    background-color: transparent;
+    border: 3px #00e3fe solid;
+    font-size: 16px;
+    padding: 12px;
+}

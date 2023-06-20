@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/signup.css">
+    <link rel="icon" type="image/x-icon" href="../static/Pics/logo.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="signup">
+        <h1>Welcome to DJ Shop</h1>
+        <h3>Please fill out the form to create your account</h3>
+        <form id="register" action="/registrovanje" method="post">
+            <input type="username" name="username" placeholder="Username" id="username" required autofocus="">
+            <p></p>
+            <input type="email" name="email" placeholder="Email" id="email" required>
+            <p></p>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <p></p>
+            <input type="password" name="password2" placeholder="Re-type password" id="password2" required>
+            <p></p>
+            <button type="submit" id="signupBtn">Register</button>
+            <p>Already have an account? Sign in <a href="/login" rel="noreferrer-noopener">here</a>!</p>
+        </form>
+    </div>
+</body>
+</html>

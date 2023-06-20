@@ -1,0 +1,79 @@
+body {
+    color: white;
+    margin: 0;
+}
+header {
+    margin: 0px;
+    height: 20%;
+    position: relative;
+    width: 100%;
+}
+.login{
+    font-size: 24px;
+    transform: translateY(30%);
+    text-decoration: none;
+}
+.login a:visited {
+    color: white;
+}
+.header {
+    padding: 2vh 10% 0 10%;
+    background-color:#001f57;
+    display: flex;
+    vertical-align:middle;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+#site-logo-name {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#search-box {
+    transform:translateY(50%);
+    position:relative;
+    height: 42px;
+    border-radius: 35px;
+    width:100%;
+    background-image: url("https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+}
+
+#navbar-search-box {
+    position: relative;
+    width: 60%;
+}
+
+main {
+    position: fixed;
+    background: url("../static/Pics/bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    padding-top: 20%;
+    height: 1000px;
+}
+
+.intro {
+    margin: 2;
+    font-size:xx-large;
+}
+#search-form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+}
+h1 {
+    margin: 0;
+}

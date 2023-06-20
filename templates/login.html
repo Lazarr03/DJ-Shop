@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/login.css">
+    <link rel="icon" type="image/x-icon" href="../static/Pics/logo.jpg">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Welcome to DJ Shop</h1>
+        <h3>Please log in</h3>
+        <form id="loginForm" method="post" action="/Login">
+            <input type="username" name="userName" placeholder="Username" id="username" required autofocus="">
+            <p></p>
+            <input type="password" name="passWord" placeholder="Password" id="password" required>
+            <p></p>
+            <button type="submit" id="loginBtn" >Sign in</button>
+            <p>Don't have an account? Register <a href="/register" rel="noreferrer-noopener">here</a>!</p>
+        </form>
+    </div>
+</body>
+</html>
