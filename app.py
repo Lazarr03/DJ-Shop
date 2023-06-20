@@ -23,8 +23,8 @@ def logovanje():
     loginform=LoginForm()
     con=sqlite3.connect('users.db')
     c=con.cursor()
-    statement=f"SELECT * from users WHERE username='{name}' AND password='{hesSifra}';"
-    c.execute(statement)
+    statement=f"SELECT * from users WHERE username=? AND password=?;"
+    c.execute(statement, (name, hesSifra))
     user=c.fetchone()
     if user:
         return render_template('/base.html')
@@ -49,8 +49,8 @@ def registrovanje():
             kodSifra=passWord.encode("utf-8")
             hesSifra=sha256(kodSifra).hexdigest()
             email = request.form["email"]
-            statement=f"SELECT * from users WHERE username='{name}' AND password='{hesSifra}';"
-            c.execute(statement)
+            statement=f"SELECT * from users WHERE username=? AND password=?;"
+            c.execute(statement, (name, hesSifra))
             data=c.fetchone()
             if data:
                 return render_template("/error.html")
@@ -70,3 +70,5 @@ def __init__(self):
     c=conn.cursor()
     c.execute("CREATE  TABLE users (username text,email text, password text)")
     conn.commit()
+
+app.run("0.0.0.0")
