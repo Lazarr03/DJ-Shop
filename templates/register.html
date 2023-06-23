@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="/static/signup.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="icon" type="image/x-icon" href="../static/Pics/logo.jpg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,20 +10,38 @@
     <title>Signup</title>
 </head>
 <body>
+    <header>
+        <div class="header">
+            <div id="site-logo-name">
+                <a href="/"><img class = "logo" src="../static/Pics/site-logo.png" alt="Logo"></a>
+                <h2>DJ Shop</h2>
+            </div>
+            <div id="navbar-search-box">
+                <form id="search-form">
+                    <input type="search" id="search-box" placeholder="Uneti pojam za pretragu">
+                </form>
+            </div>
+            <div class="navbar-login">
+                <a href="login" style="text-decoration:none"><i class='fa fa-user' style="color: #00e4ff;"></i> Prijava</a>
+            </div>
+        </div>
+    </header>
+
+
     <div class="signup">
         <h1>Welcome to DJ Shop</h1>
         <h3>Please fill out the form to create your account</h3>
         <form id="register" action="/registrovanje" method="post">
-            <input type="username" name="username" placeholder="Username" id="username" required autofocus="">
+            <input type="username" name="username" placeholder="Korisničko ime" id="username" required autofocus="">
             <p></p>
             <input type="email" name="email" placeholder="Email" id="email" required>
             <p></p>
-            <input type="password" name="password" placeholder="Password" id="password" required>
+            <input type="password" name="password" placeholder="Lozinka" id="password" required>
             <p></p>
-            <input type="password" name="password2" placeholder="Re-type password" id="password2" required>
+            <input type="password" name="password2" placeholder="Ponovo unesite lozinku" id="password2" required>
             <p></p>
-            <button type="submit" id="signupBtn">Register</button>
-            <p>Already have an account? Sign in <a href="/login" rel="noreferrer-noopener">here</a>!</p>
+            <button type="submit" id="signupBtn">Registruj se</button>
+            <p>Već imate nalog? Prijavite se <a href="/login" rel="noreferrer-noopener">ovde</a>!</p>
         </form>
     </div>
 </body>

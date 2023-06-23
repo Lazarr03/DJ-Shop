@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="/static/login.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="icon" type="image/x-icon" href="../static/Pics/logo.jpg">
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Prijava</title>
 </head>
 <body>
+    <header>
+        <div class="header">
+            <div id="site-logo-name">
+                <a href="/"><img class = "logo" src="../static/Pics/site-logo.png" alt="Logo"></a>
+                <h2>DJ Shop</h2>
+            </div>
+            <div id="navbar-search-box">
+                <form id="search-form">
+                    <input type="search" id="search-box" placeholder="Uneti pojam za pretragu">
+                </form>
+            </div>
+            <div class="navbar-login">
+                <a href="login" style="text-decoration:none"><i class='fa fa-user' style="color: #00e4ff;"></i> Prijava</a>
+            </div>
+        </div>
+    </header>
+
+
+
     <div class="login">
-        <h1>Welcome to DJ Shop</h1>
-        <h3>Please log in</h3>
+        <h1>Dobrodošli u DJ Shop</h1>
+        <h3>Prijavite se</h3>
         <form id="loginForm" method="post" action="/Login">
-            <input type="username" name="userName" placeholder="Username" id="username" required autofocus="">
+            <input type="username" name="userName" placeholder="Korisničko ime" id="username" required autofocus="">
             <p></p>
-            <input type="password" name="passWord" placeholder="Password" id="password" required>
+            <input type="password" name="passWord" placeholder="Lozinka" id="password" required>
             <p></p>
-            <button type="submit" id="loginBtn" >Sign in</button>
-            <p>Don't have an account? Register <a href="/register" rel="noreferrer-noopener">here</a>!</p>
+            <button type="submit" id="loginBtn" >Prijavi se</button>
+            <p>Nemate nalog? Registrujte se <a href="/register" rel="noreferrer-noopener">ovde</a>!</p>
         </form>
     </div>
 </body>

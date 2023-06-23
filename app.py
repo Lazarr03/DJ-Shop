@@ -18,7 +18,7 @@ def pageLogin():
 
 
 # Prijava
-@app.route("/Login", methods=["POST", "GET"])
+@app.route("/Login", methods=["POST"])
 def logovanje():
     name = request.form["userName"]
     sifra = request.form["passWord"]
