@@ -6,6 +6,7 @@ from hashlib import sha256
 app = Flask(__name__)
 app.secret_key = "__privatekey__"
 
+session.permanent = False
 
 @app.route("/")
 def home():
