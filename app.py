@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session, redirect, url_for
 import sqlite3
 from forms import RegistrationForm, LoginForm
 from hashlib import sha256
@@ -31,6 +31,7 @@ def logovanje():
     c.execute(statement, (name, hesSifra))
     user = c.fetchone()
     if user:
+        session['username'] = name
         return render_template("/base.html")
     else:
         return render_template("/error.html")
@@ -70,6 +71,11 @@ def registrovanje():
                 return render_template("/base.html")
     elif request.method == "GET":
         return render_template("/register.html", form=RegistrationForm)
+    
+@app.route("/logout")
+def logout():
+    session.pop('username', None)
+    return redirect(url_for('home'))
 
 
 def __init__(self):

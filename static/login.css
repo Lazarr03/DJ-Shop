@@ -1,3 +1,5 @@
+@import url(./header.css);
+
 body {
     color: white;
     margin: 0;
@@ -6,61 +8,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     font-size: large;
-}
-header {
-    margin: 0px;
-    height: 20%;
-    position: relative;
-    width: 100%;
-}
-.navbar-login{
-    font-size: 24px;
-    transform: translateY(25%);
-    text-decoration: none;
-}
-.navbar-login a:visited, a {
-    color: white;
-}
-.header {
-    padding: 2vh 10% 2vh 10%;
-    background-color:#001f57;
-    display: flex;
-    vertical-align:middle;
-    justify-content: space-between;
-    color: white;
-}
-.logo {
-    height: 100px;
-    width: 100px;
-}
-
-#site-logo-name {
-    width: 20%;
-    display: flex;
-    justify-content: space-around;
-}
-
-#search-box {
-    transform:translateY(50%);
-    position:relative;
-    height: 42px;
-    border-radius: 35px;
-    width:100%;
-    background-image: url("https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-}
-
-#navbar-search-box {
-    position: relative;
-    width: 60%;
-}
-#search-form {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    box-sizing: content-box;
 }
 
 .login {
