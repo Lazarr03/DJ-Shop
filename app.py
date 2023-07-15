@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, session, redirect, url_for
+from flask import Flask, render_template, request, session, redirect, url_for, current_app
 import sqlite3
 from forms import RegistrationForm, LoginForm
 from hashlib import sha256
@@ -6,7 +6,6 @@ from hashlib import sha256
 app = Flask(__name__)
 app.secret_key = "__privatekey__"
 
-session.permanent = False
 
 @app.route("/")
 def home():
@@ -73,6 +72,7 @@ def registrovanje():
     elif request.method == "GET":
         return render_template("/register.html", form=RegistrationForm)
     
+# Odjavljivanje    
 @app.route("/logout")
 def logout():
     session.pop('username', None)

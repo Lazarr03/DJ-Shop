@@ -44,3 +44,53 @@ header {
     position: relative;
     width: 60%;
 }
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: 20%;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    .header {
+        padding: 0;
+        display: flexbox;
+        justify-content:center;
+        flex-direction: column;
+        background-color:#001f57;
+    }
+    #search-box {
+        transform: translateY(-30%);
+        position: relative;
+        height: 42px;
+        border-radius: 35px;
+        width: 100%;
+        background-image: url("https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 40px;
+    }
+    #navbar-search-box {
+        position: relative;
+        width: 100%;
+    }
+    .logo {
+        text-align: center;
+        height: 100px;
+        width: 100px;
+    }
+    #site-logo-name {
+        margin-left: 31%;
+        position: relative;
+        text-align: center;
+        width: 20%;
+    }
+    .navbar-login{
+        font-size: 24px;
+        transform: translateY(-5%);
+        text-decoration: none;
+    }
+    .navbar-login a:visited, a {
+        color: white;
+    }
+}

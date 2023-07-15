@@ -1,0 +1,13 @@
+footer {
+    margin: 0px;
+    height: 20%;
+    position: relative;
+    width: 100%;
+    background: #001f57;
+    padding: 2vh 10% 2vh 10%;
+    display: flex;
+}
+footer img {
+    height: 100px;
+    width: 100px;
+}

@@ -10,34 +10,44 @@
     <link rel="icon" type="image/x-icon" href="../static/Pics/logo.jpg">
     <title>Dj Shop</title>
 </head>
-<header>
-    <div class="header">
-        <div id="site-logo-name">
-            <a href="/"><img class = "logo" src="../static/Pics/site-logo.png" alt="Logo"></a>
-            <h2>DJ Shop</h2>
-        </div>
-        <div id="navbar-search-box">
-            <form id="search-form">
-                <input type="search" id="search-box" placeholder="Uneti pojam za pretragu">
-            </form>
-        </div>
-        <div class="navbar-login">
-            {% if session["username"]%}
-            <a href="user" style="text-decoration:none"><i class='fa fa-user' style="color: #00e4ff;"></i>  {{session["username"]}}</a>
-            <a href="logout" style="text-decoration:none"> Odjavi se</a>
-            {% else %}
-            <a href="login" style="text-decoration:none"><i class='fa fa-user' style="color: #00e4ff;"></i> Prijava</a>
-            {% endif %}
-        </div>
-    </div>
-</header>
+
 <body>
+    <header>
+        <div class="header">
+            <div id="site-logo-name">
+                <a href="/"><img class = "logo" src="../static/Pics/site-logo.png" alt="Logo"></a>
+                <h2>DJ Shop</h2>
+            </div>
+            <div id="navbar-search-box">
+                <form id="search-form">
+                    <input type="search" id="search-box" placeholder="Uneti pojam za pretragu">
+                </form>
+            </div>
+            <div class="navbar-login">
+                {% if session["username"]%}
+                <a href="user" style="text-decoration:none"><i class='fa fa-user' style="color: #00e4ff;"></i>  {{session["username"]}}</a>
+                <a href="logout" style="text-decoration:none"> Odjavi se</a>
+                {% else %}
+                <a href="login" style="text-decoration:none"><i class='fa fa-user' style="color: #00e4ff;"></i> Prijava</a>
+                {% endif %}
+            </div>
+        </div>
+    </header>
     <main>
         <div class="intro">
             <h1>DJ SHOP</h1>
             <h4>Kupujte sigurno!</h4>
         </div>
     </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="/static/Pics/site-logo.png" alt="Logo">
+            <h4>DJ Shop</h4>
+        </div>
+        <div class="contact">
+            
+        </div>
+    </footer>
 </body>
 
 </html>
