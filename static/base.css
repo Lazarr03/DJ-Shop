@@ -19,7 +19,7 @@ main {
 }
 
 .intro {
-    margin: 2;
+    margin:2% 10% 10% 10%;
     font-size:xx-large;
 }
 #search-form {
@@ -30,4 +30,33 @@ main {
 }
 h1 {
     margin: 0;
+}
+
+.product-wrapper {
+    margin: auto;
+    position: relative;
+    display: flex;
+    width: 60%;
+    height: 20%;
+}
+.product {
+    margin: auto 10px auto 10px;
+    width: 50%;
+    display:grid;
+    row-gap: 20px;
+}
+.product button {
+    cursor: pointer;
+    height: 35px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #00e3fe;
+    border-radius: 35px;
+    margin: auto;
+    width:50%;
+}
+.product img {
+    border: 2px solid #00e3fe;
+    width: 100%;
+    height: 100%;
 }
